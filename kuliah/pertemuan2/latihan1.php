@@ -47,11 +47,5 @@ echo "<hr>";
 
 $nama_depan = "Syahrul";
 $nama_belakang = 'Yazid';
-echo $nama_belakang . $nama_depan;
-
-
-
-
-
-
-?>
+echo $nama_depan . $nama_belakang;
+?> 
