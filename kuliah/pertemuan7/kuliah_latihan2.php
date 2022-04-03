@@ -48,26 +48,20 @@
       <th scope="col">Gambar</th>
       <th scope="col">Nama</th>
       <th scope="col">NPM</th>
-      <th scope="col">Email</th>
-      <th scope="col">Jurusan</th>
-      <th scope="col">Aksi</th>
     </tr>
   </thead>
   <tbody>
       <?php $no = 1; foreach( $mahasiswa as $mhs) : ?>
-    <tr>
-      <th scope="row"><?php echo $no++;  ?></th>
-      
+    <tr> 
+      <th scope="row"><?php echo $no++ ?></th>
       <td>
-          <img src="img/<?= $mhs["gambar"];?>" height="50" class="rounded-circle">
+          <img src="img/<?= $mhs["gambar"];?>" height="50" width="50" class="rounded-circle">
       </td>
       <td><?= $mhs["nama"];?></td>
-      <td><?= $mhs["npm"];?></td>
-      <td><?= $mhs["email"];?></td>
-      <td><?= $mhs["jurusan"];?></td>
       <td>
           <a href="" class="btn badge bg-warning">edit</a>
           <a href="" class="btn badge bg-danger">delete</a>
+          <a href="kuliah_latihan3.php?nama=<?= $mhs["nama"]; ?>&npm=<?= $mhs["npm"]; ?>&email=<?= $mhs["email"]; ?>&jurusan=<?= $mhs["jurusan"]; ?>&gambar=<?= $mhs["gambar"]; ?>" class="btn badge bg-info">detail</a>
       </td>
     </tr>
     <?php endforeach; ?>
