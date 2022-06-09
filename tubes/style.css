@@ -1,0 +1,48 @@
+body {
+    background-color: #1dd3b5;
+}
+.container{
+    max-width: 1080px;
+    margin: 20px auto;
+    background: #1dd3b5;
+    overflow: hidden;
+    padding: 10px;
+}
+
+h1 {
+    font-style: italic;
+}
+
+.header{
+    border: 1px solid #f7f1f1;
+    padding: 10px;
+    margin: 10px;
+}
+
+   
+    
+footer{
+    clear: both;
+    color: rgb(9, 10, 10);
+    background-color: #93e2d8;
+    padding: 10px;
+    margin: 10px;
+}
+    
+
+        @media screen and (max-width: 1080px) {
+    
+            .container {
+                width: 100%;
+            }
+            
+        }
+
+        @media screen and (max-width: 780px) {
+    
+            .header, 
+            footer{
+                text-align: center;
+            }
+            
+        }
